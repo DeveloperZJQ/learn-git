@@ -17,11 +17,16 @@ git log
 8. git branch nohead commitID
 9. git log --all 
 
+<<<<<<< HEAD
 # 14. 删除不需要分支
+=======
+# 13. 删除不需要分支
+>>>>>>> e73205c39d8bd4b702ad922dbd9e8679587ac892
 1. git branch -av
 2. git branch -d 分支名称 , 如 git branch -d nohead
 3. git branch -D 分支名称 , 强制删除该分支
 
+<<<<<<< HEAD
 -d and -D的不同之处在于，-d需要把当前的需要提交到分支的代码合并到不删除的分支上,才能删除该分支; -D是强制删除该分支.
 
 # 15.怎么修改最新commit的message
@@ -33,3 +38,6 @@ git log
 1. git log -3 查找自己分支的任何历史信息，找到commitID
 2. git rebase -i commitID 这个时候就是再进行变基了,会有两个交互提醒,根据提示的信息和自己的需求进行相应的更改.
 3. 交互完成之后,提示Successfully,即ok. 
+=======
+-d and -D的不同之处在于，-d需要把当前的需要提交到分支的代码合并到不删除的分支上,才能删除该分支; -D是强制删除该分支. 
+>>>>>>> e73205c39d8bd4b702ad922dbd9e8679587ac892
