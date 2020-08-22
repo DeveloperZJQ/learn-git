@@ -110,5 +110,27 @@ git push --set-upstream zhineng dev
 # 30. 配置公私钥
 1. 参考文档 https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#
 
-# 31. 在github上创建个人仓库
-1.
+# 31. 把本地仓库同步到github
+1. 在github上面新建repository
+2. 需要在本地执行 git remote add github-learn-git https://github.com/DeveloperZJQ/learn-git.git
+3. 执行git add . 将所有修改放到暂存区,然后再执行git pull origin github-learn-git
+4. 执行git commit -m "init commit"
+5. git push github-learn-git
+
+# 32. 不同人修改了不同文件如何处理
+1. git checkout -b feature-test origin/feature-test  基于远程仓库分支
+2. git fentch github-learn-git	拉取远程所有分支
+3. git merge origin feature-test 团队要去线性的情况下不能使用merge,而更多的使用rebase
+
+# 33. 不同人修改了文件的不同区域
+1. git branch -av 	查看所在分支
+2. git pull origin 分支名 或者分两步走 git fentch
+3. git merge origin/分支名
+4. git push
+
+# 34. 不同人修改了同一个文件的相同区域
+1. git pull origin 分支名
+2. 会报冲突,找到文件中特定的符号,把冲突的内容去掉,一定要认真,关系到其他人,所以一定要认真.
+3. 处理完冲突文件之后,执行命令 git commit -m "Resolved conflict by hand with git Commands"
+4. git status
+5. git push origin 分支名
