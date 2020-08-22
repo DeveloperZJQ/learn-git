@@ -33,3 +33,8 @@ git log
 1. git log -3 查找自己分支的任何历史信息，找到commitID
 2. git rebase -i commitID 这个时候就是再进行变基了,会有两个交互提醒,根据提示的信息和自己的需求进行相应的更改.
 3. 交互完成之后,提示Successfully,即ok. 
+
+# 19. 怎么比较暂存区和HEAD所含文件的差异
+1. git add 文件名  将文件放到暂存区
+2. git status 	查看当前git的状态
+3. git diff --cached 查看缓存区与当前HEAD的区别
