@@ -134,3 +134,18 @@ git push --set-upstream zhineng dev
 3. 处理完冲突文件之后,执行命令 git commit -m "Resolved conflict by hand with git Commands"
 4. git status
 5. git push origin 分支名
+
+# 35. 同时变更了文件名和文件内容如何处理
+1. git pull origin 分支名
+2. git branch -av 查看当前所在分支
+3. git status  以上三条命令可能用的比较频繁
+4. git pull origin 分支名
+5. 查看本地工作区的情况和内容,git感知能力比较强大,一条命令git pull搞定
+
+# 36. 把同一文件名改成了不同的文件名如何处理
+1. 两个人同时修改文件名,git不能分辨出应该保留哪一个文件,所以需要两个人坐在一起商量怎么保留.
+2. git rm 原来的文件名
+3. git rm 两个人非保留的文件名
+4. git add 保留的文件名
+5. git commit -m "Decide to mv"
+6. git push origin 分支名
