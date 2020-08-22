@@ -149,3 +149,9 @@ git push --set-upstream zhineng dev
 4. git add 保留的文件名
 5. git commit -m "Decide to mv"
 6. git push origin 分支名
+
+# 37. 禁止向集成分支执行push -f 操作
+1. git push -f origin 远程分支名
+
+# 38. 禁止向集成分支执行变更历史的操作
+1. 千万不能对集成分支历史树进行变更,可以重新提交commit
