@@ -96,3 +96,5 @@ git log
 2. 哑协议与智能协议
 直观区别: 哑协议传输进度不可见;智能协议传输可见.
 传输速度: 智能协议比哑协议传输速度快.
+3. 备份特点
+![Image text](https://github.com/DeveloperZJQ/learn-git/blob/dev/img-folder/saveFeature.png)
