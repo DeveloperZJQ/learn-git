@@ -50,3 +50,18 @@ git log
 1. git reset HEAD	将缓存区恢复成和HEAD指向一样的模样
 2. git diff --cached	比较缓存区和工作区的差异
 3. git diff		比较缓存区和HEAD的差异
+
+# 22. 工作区恢复成暂存区一样的内容
+1. git status
+2. git checkout -- README.md	指定README.md恢复成和暂存区一样
+3. git diff 			比较暂存区和工作区的区别
+
+# 23. 消除最近的几次提交
+1. git log --graph
+2. git reset --hard commitID    HEAD、暂存区和工作区恢复成该commitID
+
+# 24. 比较不同提交的指定文件的差异
+1. git log --graph
+2. git diff commitID1 commitID2  比较两次提交的差异
+3. git diff dev master		 比较dev和master分支的差异
+4. git diff dev master -- README.md  比较两个分支README.md文件的差异
