@@ -72,3 +72,20 @@ git log
 3. git add .
 4. git commit -m "rm test2.md"
 5. git push origin dev		删除远程仓库中的test2.md文件
+
+# 26. 开发中临时加塞了紧急任务怎么处理
+1. git branch		查看当前所在分支
+2. git stash		保存当前工作区到一个目录
+3. git status		查看当前暂存区的状态 
+4. git stash apply	恢复保存到堆栈的内容,在stash内部保存不会丢失,使用git stash list依然存在
+5. git stash pop	恢复保存到堆栈中的内容,在stash内部将不会保存,使用git stash list不会存在,所以该命令与上命令要区分.
+6. git status		查看状态和查看文件是否已经恢复.
+
+# 27. 指定不要git管理的文件
+1. github.com/github/gitignore   地址参考git忽略管理的配置
+
+# 28. 如何将Git仓库备份到本地
+1. 常用的传输协议
+	|常用协议|语法格式|说明|
+	| ----	| ----  | ----|
+	|本地协议(1)| /path/to/repo.git	| 哑协议|
