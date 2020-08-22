@@ -96,5 +96,19 @@ git log
 2. 哑协议与智能协议
 直观区别: 哑协议传输进度不可见;智能协议传输可见.
 传输速度: 智能协议比哑协议传输速度快.
-3. 备份特点
-![Image text](https://github.com/DeveloperZJQ/learn-git/blob/dev/img-folder/saveFeature.png)
+3. 举个例子
+git clone --bare /path/to/repo.git yaBare.git
+git clone --bare file:///path/to/repo.git zhineng.git
+4. 保证git remote -v
+如果无效的话,需要创建远程仓库地址
+git remote add zhineng file:///path/to/repo.git
+git push --set-upstream zhineng dev
+
+# 29. 注册一个github账号
+1. 注册地址：https://github.com
+
+# 30. 配置公私钥
+1. 参考文档 https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#
+
+# 31. 在github上创建个人仓库
+1.
