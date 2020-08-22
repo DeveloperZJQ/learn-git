@@ -65,3 +65,10 @@ git log
 2. git diff commitID1 commitID2  比较两次提交的差异
 3. git diff dev master		 比较dev和master分支的差异
 4. git diff dev master -- README.md  比较两个分支README.md文件的差异
+
+# 25. 正确删除文件的方法
+1. git branch
+2. git rm test2.md(filename)  	删除指定的文件
+3. git add .
+4. git commit -m "rm test2.md"
+5. git push origin dev		删除远程仓库中的test2.md文件
