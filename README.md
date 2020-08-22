@@ -38,3 +38,15 @@ git log
 1. git add 文件名  将文件放到暂存区
 2. git status 	查看当前git的状态
 3. git diff --cached 查看缓存区与当前HEAD的区别
+
+# 20. 比较暂存区和工作区所含文件的差异
+1. vim README.md
+2. git add README.md
+3. git diff    比较暂存区和工作区所有文件的区别
+4. git diff --README.md  比较暂存区和工作区README.md文件的区别
+5. git status
+
+# 21. 暂存区恢复HEAD成一样
+1. git reset HEAD	将缓存区恢复成和HEAD指向一样的模样
+2. git diff --cached	比较缓存区和工作区的差异
+3. git diff		比较缓存区和HEAD的差异
