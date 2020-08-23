@@ -164,3 +164,6 @@ git push --set-upstream zhineng dev
 5. Gitlab Flow(带生产分支)-适用于不具备主干开发能力.无法控制准确的发布时间,但又要求不停地集成.
 6. Gitlab Flow(带环境分支)-不具备主干开发能力，需要逐个通过各个测试环境的验证才能发布.
 7. Gitlab Flow(带发布分支)-不具备主干开发能力.需要对外发布和维护不同版本
+
+# 40. 添加gitlab等ci工具图片
+![image](https://github.com/DeveloperZJQ/learn-git/blob/master/images/16d4452d820e66791b3a253cee3dac23.png)
