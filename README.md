@@ -7,6 +7,22 @@ git commit -m "update filename"
 git status
 git log
 
+# 11. 更换项目工程的git地址
+## func1
+git remote -v  #查看远端地址
+git remote #查看远端仓库名
+git remote set-url origin https://github.com/xx/xx.git (新地址)
+
+## func2
+git remote rm origin #删除远程的仓库
+git remote add origin  https://github.com/xx/xx.git(新地址) #重新添加远程仓库
+
+## func3
+修改.git文件夹
+.git文件夹一般在项目文件夹的第一层文件夹
+.git文件在系统里默认是隐藏的，windows需要设置显示，linux使用ls -a查看
+修改config文件内容，将[remote "origin"] url 修改成需要替换的url
+
 # 12. 分离头指针情况下的注意事项
 1. git branch
 2. git log --graph
